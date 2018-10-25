@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/dmscreen.io/static/js/runtime~main.faae0793.js"
   },
   {
-    "revision": "920eb2868b8759d8386e",
-    "url": "/dmscreen.io/static/js/main.920eb286.chunk.js"
+    "revision": "838e67918c4ff9fe0326",
+    "url": "/dmscreen.io/static/js/main.838e6791.chunk.js"
   },
   {
     "revision": "37f90d57916b981a0157",
     "url": "/dmscreen.io/static/js/1.37f90d57.chunk.js"
   },
   {
-    "revision": "920eb2868b8759d8386e",
-    "url": "/dmscreen.io/static/css/main.ac60b17e.chunk.css"
+    "revision": "838e67918c4ff9fe0326",
+    "url": "/dmscreen.io/static/css/main.a19c0b48.chunk.css"
   },
   {
-    "revision": "e1f039c3071b1dcfc4710c6c639e679e",
+    "revision": "e016f6221cd22d99857af081582d1cb2",
     "url": "/dmscreen.io/index.html"
   }
 ];

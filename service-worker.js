@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/dmscreen.io/precache-manifest.56a784cfd5ef44e94f2d56610aabc381.js"
+  "/dmscreen.io/precache-manifest.ef1b975f023f5f98e667ab58ae12af09.js"
 );
 
 workbox.clientsClaim();
