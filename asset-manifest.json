@@ -1,14 +1,13 @@
 {
-  "main.css": "/dmscreen.io/static/css/main.88c22be9.chunk.css",
-  "main.js": "/dmscreen.io/static/js/main.84fbcca6.chunk.js",
-  "main.js.map": "/dmscreen.io/static/js/main.84fbcca6.chunk.js.map",
-  "static/js/1.a700ff87.chunk.js": "/dmscreen.io/static/js/1.a700ff87.chunk.js",
-  "static/js/1.a700ff87.chunk.js.map": "/dmscreen.io/static/js/1.a700ff87.chunk.js.map",
+  "main.css": "/dmscreen.io/static/css/main.ac60b17e.chunk.css",
+  "main.js": "/dmscreen.io/static/js/main.920eb286.chunk.js",
+  "main.js.map": "/dmscreen.io/static/js/main.920eb286.chunk.js.map",
+  "static/js/1.37f90d57.chunk.js": "/dmscreen.io/static/js/1.37f90d57.chunk.js",
+  "static/js/1.37f90d57.chunk.js.map": "/dmscreen.io/static/js/1.37f90d57.chunk.js.map",
   "runtime~main.js": "/dmscreen.io/static/js/runtime~main.faae0793.js",
   "runtime~main.js.map": "/dmscreen.io/static/js/runtime~main.faae0793.js.map",
-  "static/media/logo.svg": "/dmscreen.io/static/media/logo.5d5d9eef.svg",
-  "static/css/main.88c22be9.chunk.css.map": "/dmscreen.io/static/css/main.88c22be9.chunk.css.map",
+  "static/css/main.ac60b17e.chunk.css.map": "/dmscreen.io/static/css/main.ac60b17e.chunk.css.map",
   "index.html": "/dmscreen.io/index.html",
-  "precache-manifest.ff9d5a60dd2a3d9090da22e7912b65e1.js": "/dmscreen.io/precache-manifest.ff9d5a60dd2a3d9090da22e7912b65e1.js",
+  "precache-manifest.56a784cfd5ef44e94f2d56610aabc381.js": "/dmscreen.io/precache-manifest.56a784cfd5ef44e94f2d56610aabc381.js",
   "service-worker.js": "/dmscreen.io/service-worker.js"
 }
