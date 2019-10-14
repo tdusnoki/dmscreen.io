@@ -73,10 +73,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <p>DM Screen</p>
-          <div className="UnderConstr">
-            <p>UNDER CONSTRUCTION</p>
-          </div>
+          <p1>DM SCREEN</p1>
           <div>
             <button className="add" onClick={this.addCard}>Add New Card</button>
             {elements.map(element =>
