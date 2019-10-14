@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dca127db859c26cabe962719acaa8cb8",
+    "revision": "179ca21c0832f50f604e5d1c6e1b4487",
     "url": "/dmscreen.io/index.html"
   },
   {
-    "revision": "c1701f1488ce7b3abbfb",
-    "url": "/dmscreen.io/static/css/main.47b72444.chunk.css"
+    "revision": "f2823d2aca6e65feedb9",
+    "url": "/dmscreen.io/static/css/main.e95587d5.chunk.css"
   },
   {
     "revision": "439f6c0859030122ad5c",
     "url": "/dmscreen.io/static/js/2.08005b40.chunk.js"
   },
   {
-    "revision": "c1701f1488ce7b3abbfb",
-    "url": "/dmscreen.io/static/js/main.98fde80c.chunk.js"
+    "revision": "f2823d2aca6e65feedb9",
+    "url": "/dmscreen.io/static/js/main.4de53fb7.chunk.js"
   },
   {
     "revision": "36ebdc77c797638c2b18",

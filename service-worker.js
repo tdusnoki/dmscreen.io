@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/dmscreen.io/precache-manifest.c31e20b290dfcd930186d69406815fc3.js"
+  "/dmscreen.io/precache-manifest.fa9ae396cff4b19c800cf96e3343823e.js"
 );
 
 self.addEventListener('message', (event) => {

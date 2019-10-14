@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/dmscreen.io/static/css/main.47b72444.chunk.css",
-    "main.js": "/dmscreen.io/static/js/main.98fde80c.chunk.js",
-    "main.js.map": "/dmscreen.io/static/js/main.98fde80c.chunk.js.map",
+    "main.css": "/dmscreen.io/static/css/main.e95587d5.chunk.css",
+    "main.js": "/dmscreen.io/static/js/main.4de53fb7.chunk.js",
+    "main.js.map": "/dmscreen.io/static/js/main.4de53fb7.chunk.js.map",
     "runtime-main.js": "/dmscreen.io/static/js/runtime-main.5cb59a43.js",
     "runtime-main.js.map": "/dmscreen.io/static/js/runtime-main.5cb59a43.js.map",
     "static/js/2.08005b40.chunk.js": "/dmscreen.io/static/js/2.08005b40.chunk.js",
     "static/js/2.08005b40.chunk.js.map": "/dmscreen.io/static/js/2.08005b40.chunk.js.map",
     "index.html": "/dmscreen.io/index.html",
-    "precache-manifest.c31e20b290dfcd930186d69406815fc3.js": "/dmscreen.io/precache-manifest.c31e20b290dfcd930186d69406815fc3.js",
+    "precache-manifest.fa9ae396cff4b19c800cf96e3343823e.js": "/dmscreen.io/precache-manifest.fa9ae396cff4b19c800cf96e3343823e.js",
     "service-worker.js": "/dmscreen.io/service-worker.js",
-    "static/css/main.47b72444.chunk.css.map": "/dmscreen.io/static/css/main.47b72444.chunk.css.map"
+    "static/css/main.e95587d5.chunk.css.map": "/dmscreen.io/static/css/main.e95587d5.chunk.css.map"
   }
 }
