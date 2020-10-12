@@ -13,8 +13,9 @@ export default ({
   onHitpointsChange,
   onArmorClassChange,
   onRemove,
+  nextTurn,
 }) =>
-  <div className="card">
+  <div className={nextTurn ? "card" : "highlight"}>
     <Input
       label="Name"
       type="text"
