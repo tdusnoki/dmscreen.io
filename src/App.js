@@ -15,7 +15,9 @@ class App extends Component {
     this.updateHitpoints = this.updateHitpoints.bind(this);
     this.updateArmorClass = this.updateArmorClass.bind(this);
     this.addCard = this.addCard.bind(this);
+    this.nextPlayer = this.nextPlayer.bind(this);
     this.removeElement = this.removeElement.bind(this);
+    this.highlightCard = this.highlightCard.bind(this);
   }
 
   updateName(id, e) {
@@ -68,9 +70,10 @@ class App extends Component {
       hitpoints: 12,
       armorclass: 10,
     };
-    this.setState({
-      elements: elements.sort((l, r) => r.initiative - l.initiative)
-    });
+    this.sortElements();
+  }
+  
+  nextPlayer() {
   }
 
   removeElement(id) {
@@ -78,6 +81,10 @@ class App extends Component {
     elements = elements.filter(el => el.id !== id);
     this.setState({ elements });
   }
+
+  highlightCard() {
+  }
+
   render() {
     const { elements } = this.state;
     return (
@@ -98,8 +105,10 @@ class App extends Component {
                 onHitpointsChange={this.updateHitpoints}
                 onArmorClassChange={this.updateArmorClass}
                 onRemove={this.removeElement}
+                nextTurn={this.nextPlayer}
               />
             )}
+            <button className="next" onClick={this.nextPlayer}>Next Player</button>
         </div>
         </header>
       </div>

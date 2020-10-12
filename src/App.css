@@ -13,7 +13,7 @@
   color: yellow;
 }
 
-.card {
+.card{
   margin-bottom: 18px;
   width: 480px;
   padding: 12px 6px;
@@ -56,7 +56,7 @@
   background-color: #007ea1;
 }
 
-.add {
+.add, .next {
   flex: 1;
   color: white;
   background-color: rgb(41, 176, 255);
@@ -70,6 +70,6 @@
   text-transform: uppercase;
 }
 
-.add:hover {
+.add:hover, .next:hover {
   background-color: #007ea1;
 }
