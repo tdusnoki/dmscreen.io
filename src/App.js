@@ -13,6 +13,7 @@ class App extends Component {
     this.updateName = this.updateName.bind(this);
     this.updateInitiative = this.updateInitiative.bind(this);
     this.updateHitpoints = this.updateHitpoints.bind(this);
+    this.updateArmorClass = this.updateArmorClass.bind(this);
     this.addCard = this.addCard.bind(this);
     this.removeElement = this.removeElement.bind(this);
   }
@@ -30,6 +31,14 @@ class App extends Component {
     const elements = this.state.elements;
     const index = elements.findIndex(el => el.id === id);
     elements[index].hitpoints = Number(value);
+    this.setState({ elements });
+  }
+  
+  updateArmorClass(id, e) {
+    const { value } = e.target;
+    const elements = this.state.elements;
+    const index = elements.findIndex(el => el.id === id);
+    elements[index].armorclass = Number(value);
     this.setState({ elements });
   }
 
@@ -55,8 +64,9 @@ class App extends Component {
     elements[elements.length] = {
       id: randomId(),
       name: `Player ${elements.length + 1}`,
-      initiative: -100,
+      initiative: 0,
       hitpoints: 12,
+      armorclass: 10,
     };
     this.setState({
       elements: elements.sort((l, r) => r.initiative - l.initiative)
@@ -89,6 +99,7 @@ class App extends Component {
                 onNameChange={this.updateName}
                 onInitiativeChange={this.updateInitiative}
                 onHitpointsChange={this.updateHitpoints}
+                onArmorClassChange={this.updateArmorClass}
                 onRemove={this.removeElement}
               />
             )}

@@ -7,9 +7,11 @@ export default ({
   name,
   initiative,
   hitpoints,
+  armorclass,
   onNameChange,
   onInitiativeChange,
   onHitpointsChange,
+  onArmorClassChange,
   onRemove,
 }) =>
   <div className="card">
@@ -38,6 +40,13 @@ export default ({
       type="number"
       value={hitpoints}
       onChange={e => onHitpointsChange(id, e)}
+    />
+    
+    <Input
+      label="Armor Class"
+      type="number"
+      value={armorclass}
+      onChange={e => onArmorClassChange(id, e)}
     />
 
     <button onClick={() => onRemove(id)}>X</button>
