@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
 import Card from './Card';
-import { randomId } from './utils';
+import { randomId, rollD20 } from './utils';
 import { initialState } from './constants';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      monsterList: [],
+      monsterData: {},
+      fullMonsterList: [],
       elements: initialState,
     };
     this.updateName = this.updateName.bind(this);
@@ -18,8 +21,49 @@ class App extends Component {
     this.nextPlayer = this.nextPlayer.bind(this);
     this.removeElement = this.removeElement.bind(this);
     this.highlightCard = this.highlightCard.bind(this);
+    this.addMonster = this.addMonster.bind(this);
+    this.monsterFetcher(true, null);
   }
+  
+  monsterFetcher = (all, url) => {
+    if (all === true) {
+      fetch("http://www.dnd5eapi.co/api/monsters")
+        .then(response => {
+          return response.json();
+        })
+        .then(json => {
+          this.setState({ monsterList: json.results });
+        });
+    } else {
+      fetch(`http://www.dnd5eapi.co${url}`)
+        .then(response => {
+          return response.json();
+        })
+        .then(json => {
+          this.setState({ monsterData: json });
+        });
+    }
+  };
 
+  selectMonster = event => {
+    let monsterInfo = this.state.monsterList.filter(
+      monster => monster.name === event.target.value
+    )[0];
+    this.monsterFetcher(false, monsterInfo.url);
+  };
+
+  addMonster = () => {
+    let monster = this.state.monsterData;
+    const { elements } = this.state;
+    elements[elements.length] = {
+      id:randomId(),
+      name: monster.name,
+      initiative: rollD20() + (Math.floor((monster.dexterity - 10)/2)),
+      hitpoints: monster.hit_points,
+      armorclass: monster.armor_class
+    }
+    this.sortElements();
+  }
   updateName(id, e) {
     const { value } = e.target;
     const elements = this.state.elements;
@@ -93,12 +137,19 @@ class App extends Component {
           <p1>DM SCREEN</p1>
           <div>
             <button className="add" onClick={this.addCard}>Add New Card</button>
+            <button className="add" onClick={this.addMonster}>Add Monster Card</button>
+            <select onChange={event => this.selectMonster(event)}>
+              {this.state.monsterList.map(monster => {
+                return <option key={monster.name}> {monster.name}</option>;
+              })}
+            </select>
             {elements.map(element =>
               <Card
                 key={element.id}
                 name={element.name}
                 initiative={element.initiative}
                 hitpoints={element.hitpoints}
+                armorclass={element.armorclass}
                 id={element.id}
                 onNameChange={this.updateName}
                 onInitiativeChange={this.updateInitiative}
