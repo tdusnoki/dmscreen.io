@@ -32,7 +32,7 @@ export default ({
     <button
       onClick={() => onInitiativeChange(id, { target: { value: rollD20() } } )}
     >
-      roll d20
+      Roll Initiative
     </button>
 
     <Input
